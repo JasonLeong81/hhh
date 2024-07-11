@@ -5,8 +5,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'python --version'
-                bat './main.py'
+                sh 'python --version'
+                sh './main.py'
             }
         }
     }
